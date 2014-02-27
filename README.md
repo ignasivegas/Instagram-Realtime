@@ -5,12 +5,14 @@ Show realtime Instagram photos by hashtag or Geographie (Node.js, socket.io and 
 This app, is based on https://github.com/Instagram/Realtime-Demo (Deprecated).
 I adapted it, and also add subscription tags.
 
+Demo: http://www.mwclive.com/
+
 
 Instalation
 ============
 
-- Install Node "brew install node"
-- Install redis "brew install redis"
+- Install Node *brew install node*
+- Install redis *brew install redis*
 - Clone Project
 - Install dependencies: npm install
 - Add your client_id and client_secret to settings.js

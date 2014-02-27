@@ -6,8 +6,8 @@ exports.app = app;
 
 
 exports.appPort = process.env.PORT || 3000;
-exports.CLIENT_ID = process.env.IG_CLIENT_ID || 'a4e8afbbf8394fcb8c0ade9cc35dd4c9'
-exports.CLIENT_SECRET = process.env.IG_CLIENT_SECRET || '2a7e74af3ed042d0a9d7f45f90755214';
+exports.CLIENT_ID = process.env.IG_CLIENT_ID || 'xxxx'
+exports.CLIENT_SECRET = process.env.IG_CLIENT_SECRET || 'xxx';
 exports.httpClient = (process.env.IG_USE_INSECURE ? require('http') : require('https'));
 exports.apiHost = process.env.IG_API_HOST || 'api.instagram.com';
 exports.apiPort = process.env.IG_API_PORT || null;

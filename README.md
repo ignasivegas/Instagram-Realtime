@@ -3,14 +3,14 @@ Intagram-Realtime
 
 Show realtime Instagram photos by hashtag or Geographie (Node.js, socket.io and Redis)
 This app, is based on https://github.com/Instagram/Realtime-Demo (Deprecated).
-I adapted it, and also add subscription tags (not only geography)
+I adapted it, and also add subscription tags.
 
 
 Instalation
 ============
 
-- Install Node
-- Install redis
+- Install Node "brew install node"
+- Install redis "brew install redis"
 - Clone Project
 - Install dependencies: npm install
 - Add your client_id and client_secret to settings.js
@@ -23,8 +23,12 @@ In subscribe_examples.info file, you have subscription examples.
 **Add your env variables:**
 
 export IG_CLIENT_ID=xxxxx
+
 export IG_CLIENT_SECRET_ID=xxxxx
+
 export IG_CALLBACK_HOST=http://xxxxx.com
+
+
 
 PD: If you wanna run this on localhost, you need to provide a callback_url different to localhost or 127.0.0.1
 You can do it using: https://ngrok.com/

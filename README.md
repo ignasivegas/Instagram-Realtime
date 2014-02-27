@@ -7,17 +7,18 @@ I adapted it, and also add subscription tags (not only geography)
 
 
 Instalation
+============
 
-Install Node
-Install redis
-Clone Project
-Install dependencies: npm install
-Add your client_id and client_secret to settings.js
+- Install Node
+- Install redis
+- Clone Project
+- Install dependencies: npm install
+- Add your client_id and client_secret to settings.js
 
-Subscribe to a tag or geography:
+**Subscribe to a tag or geography:**
 In subscribe_examples.info file, you have subscription examples.
 
-Add your env variables:
+**Add your env variables:**
 export IG_CLIENT_ID=xxxxx
 export IG_CLIENT_SECRET_ID=xxxxx
 export IG_CALLBACK_HOST=http://xxxxx.com
@@ -25,16 +26,16 @@ export IG_CALLBACK_HOST=http://xxxxx.com
 PD: If you wanna run this on localhost, you need to provide a callback_url different to localhost or 127.0.0.1
 You can do it using: https://ngrok.com/
 
-Start redis:
+**Start redis:**
 
 redis-server conf/redis.conf
 
 
-Start node:
+**Start node:**
 
 node web.js
 
-Possible Issues:
+**Possible Issues:**
 Redis connection failed: Change the redis port, in conf/redis.conf file
 
 

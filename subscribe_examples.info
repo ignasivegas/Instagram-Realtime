@@ -1,0 +1,14 @@
+#You need to set env variables (IG_CLIENT_ID, IG_CLIENT_SECRET, IG_CALLBACK_HOST)
+
+#subscribe to MWC14 tag
+curl -F "client_id=$IG_CLIENT_ID" \
+     -F "client_secret=$IG_CLIENT_SECRET" \
+     -F 'object=tag' \
+     -F 'aspect=media' \
+     -F 'object_id=MWC14' \
+     -F "callback_url=$IG_CALLBACK_HOST/callbacks/tag/mwc14/" \
+     https://api.instagram.com/v1/subscriptions/
+
+
+#delete all subscriptions
+curl -X DELETE "https://api.instagram.com/v1/subscriptions?client_secret=$IG_CLIENT_SECRET&object=all&client_id=$IG_CLIENT_ID"

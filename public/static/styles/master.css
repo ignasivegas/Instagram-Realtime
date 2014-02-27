@@ -1,0 +1,172 @@
+/* @override http://localhost:3000/static/styles/master.css */
+
+body {
+	font-family: "Helvetica Neue", Helvetica;
+	font-size: 100%;
+	background-color: #F1F1F1;
+}
+
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	float: none !important;
+	display: block;
+	padding-top: 20px;
+}
+#contact a{
+	color: #80BABC;
+	font-weight: normal;
+}
+
+
+#contact{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 12px;
+	text-align: right;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	padding: 25px;
+}
+h1 img {
+	margin-top: 18px;
+	margin-bottom: 15px;
+}
+
+h2 {
+	color: black;
+	font-size: 1.25em;
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin-bottom: 9px;
+	text-align: center
+}
+a {
+	color:  #eee;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+	border-bottom: 1px solid #333;
+	margin: 0 auto;
+	width: 95%;
+}
+
+.cube {
+	width: 200px;
+	height: 200px;
+
+	float: left;
+	background-color: white;
+	margin: 0 15px 20px;
+	text-align: center;
+	padding: 5px;
+}
+.cube span {
+  background: #000;
+  padding: 10px;
+  position:absolute;
+  font-size: 9px; /* 13/10 */
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 180px;
+  background-color:rgba(0,0,0,0.5);
+  max-height: 60px;
+}
+.cube .location {
+  right: 0;
+  bottom: 3px;
+}
+.cube .text {
+  bottom: 5px;
+  font-weight:bold;
+}
+.container {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	z-index: 100;
+	font-size: .625em; /* 10/16 */
+}
+
+.container.animating {
+	-webkit-transform: translateZ(-10em);
+	-webkit-transform-style: preserve-3d;
+	z-index: -100;
+}
+
+.in, .out {
+	-webkit-animation-duration: .75s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 50% 50% -10em;
+	-webkit-backface-visibility: hidden;
+}
+.cube img {
+	height: 100%;
+	width: 100%;
+}
+
+/* @end */
+
+/* IE PNG */
+img {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(...);
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { 
+/* STYLES GO HERE */ 
+	#wrapper{
+		width:75%;
+	}
+	h1{
+		text-align: center;
+		padding: 5px;
+	}
+	h2{
+		margin-top: 10px;
+		font-size: 1.5em;
+	}
+	#contact{
+		position: relative;
+		text-align: center;
+		font-size: 14px;
+	}
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) { /* STYLES GO HERE */
+
+	#wrapper{
+		width:75%;
+	}
+	h1{
+		text-align: center;
+		padding: 5px;
+	}
+	h2{
+		margin-top: 10px;
+		font-size: 1.5em;
+	}
+	#contact{
+		position: relative;
+		text-align: center;
+		font-size: 14px;
+	}
+}

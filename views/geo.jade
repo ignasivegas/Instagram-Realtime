@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  h1 #MWC14
+  h2 Post a photo on Instagram with #MWC14 and see what happens
+  div#contact
+    | Do you like it? Contact me
+    br
+    a(href='http://twitter.com/ignavegas') @ignavegas
+    br
+    a(href='mailto:ignasivegas@gmail.com') ignasivegas@gmail.com
+  
+  
+  div#content
+    div#wrapper.js-masonry
+        - each image in images
+            .cube
+              - var text = image.caption.text.substring(0,100);
+              img(src=image.images.low_resolution.url)
+              .info
+                if text != null
+                  span.text #{text}
